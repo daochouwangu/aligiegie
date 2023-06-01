@@ -1,0 +1,21 @@
+{
+  "name": "aligiegie",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev:web": "pnpm --filter @aligiegie/web dev",
+    "dev:server": "pnpm --filter @aligiegie/server start",
+    "dev": "concurrently \"pnpm dev:web\" \"pnpm dev:server\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.1.0"
+  }
+}
